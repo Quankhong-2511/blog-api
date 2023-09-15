@@ -3,7 +3,7 @@ from .models import CustomUser, Blog
 
 
 class BlogAdmin(admin.ModelAdmin):
-    list_display = ['id','title','owner']
+    list_display = ['id','title','owner','image']
     list_filter = ['owner']
     search_fields = ['owner']
     
